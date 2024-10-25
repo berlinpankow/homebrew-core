@@ -120,6 +120,7 @@ class Mysql < Formula
       -DWITH_ZSTD=system
       -DWITH_UNIT_TESTS=OFF
       -DWITH_INNODB_MEMCACHED=ON
+      -DWITH_AUTHENTICATION_CLIENT_PLUGINS=ON
     ]
 
     system "cmake", "-S", ".", "-B", "build", *args, *std_cmake_args

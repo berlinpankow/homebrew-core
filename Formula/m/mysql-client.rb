@@ -58,6 +58,7 @@ class MysqlClient < Formula
       -DWITH_SSL=yes
       -DWITH_UNIT_TESTS=OFF
       -DWITHOUT_SERVER=ON
+      -DWITH_AUTHENTICATION_CLIENT_PLUGINS=ON
     ]
 
     system "cmake", "-S", ".", "-B", "build", *args, *std_cmake_args
